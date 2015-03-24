@@ -1,0 +1,91 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html lang="en" class="ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html lang="en" class="ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
+<head>
+<meta name="viewport" content="width = 1050, user-scalable = no" /><script type="text/javascript" src="js/jquery.min.1.7.js"></script>
+<script type="text/javascript" src="js/modernizr.2.5.3.min.js"></script>
+</head>
+<body>
+
+
+<div class="flipbook-viewport">
+	<div class="container">
+		<div class="flipbook">
+			<div style="background-image:url(img/gri_97_r_58_001.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_002.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_005.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_006.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_009.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_010.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_013.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_014.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_017.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_018.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_021.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_022.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_025.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_026.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_029.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_030.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_033.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_034.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_037.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_038.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_041.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_042.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_045.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_046.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_049.png)"></div>
+			<div style="background-image:url(img/gri_97_r_58_050.png)"></div>
+		</div>
+	</div>
+</div>
+
+
+<script type="text/javascript">
+
+function loadApp() {
+
+	// Create the flipbook
+
+	$('.flipbook').turn({
+			// Width
+
+			width:1000,
+			
+			// Height
+
+			height:418,
+
+			// Elevation
+
+			elevation: 50,
+			
+			// Enable gradients
+
+			gradients: true,
+			
+			// Auto center this flipbook
+
+			autoCenter: true
+
+	});
+}
+
+// Load the HTML4 version if there's not CSS transform
+
+yepnope({
+	test : Modernizr.csstransforms,
+	yep: ['js/turn.js'],
+	nope: ['js/turn.html4.min.js'],
+	both: ['css/basic.css'],
+	complete: loadApp
+});
+
+</script>
+
+</body>
+</html>
