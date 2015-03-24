@@ -2510,7 +2510,7 @@ flipMethods = {
           if (x[1])
             gradientEndPointA.y = (100-gradientEndPointA.y);
 
-          cssB['box-shadow'] = '0 0 20px rgba(0,0,0,'+(0.5*shadowVal)+')';
+          cssB['box-shadow'] = '0 0 0px rgba(0,0,0,'+(0.5*shadowVal)+')';
           folding.css(cssB);
 
           gradient(data.ashadow,
